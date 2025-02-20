@@ -8,7 +8,6 @@ const input = require("fs")
 //output: hello
 
 // 입력값이 하나일 경우(숫자)
-
 // 방법1)
 const input = +require("fs")
     .readFileSync(process.platform === "linux" ? "/dev/stdin" : "./input.txt")
