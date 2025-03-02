@@ -10,7 +10,6 @@ let size = 0;
 
 if (Number(input[0]) !== confetti.length) return;
 
-console.log(confetti);
 confetti.forEach(line => {
     const [x, y] = line;
 
