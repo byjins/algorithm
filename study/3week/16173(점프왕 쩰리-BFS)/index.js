@@ -16,6 +16,7 @@ function jumpking(map) {
     const queue = [];
     const visited = Array.from({ length: mapArea }, () => Array(mapArea).fill(false));
 
+    // 첫 시작 지점
     queue.push([0, 0]);
     visited[0][0] = true;
 

@@ -21,10 +21,12 @@ for (let i = 1; i <= computer; i++) {
 }
 
 // 간선 정보 반영
-for (let i = 0; i < network; i++) {
-    const [u, v] = input[i];
-    graph[u].push(v);
-    graph[v].push(u);
+for (const connection of input) {
+    const [computerA, computerB] = connection;
+
+    // 양방향 연결 (A <-> B)
+    graph[computerA].push(computerB);
+    graph[computerB].push(computerA);
 }
 
 // 3. 방문 배열 초기화
